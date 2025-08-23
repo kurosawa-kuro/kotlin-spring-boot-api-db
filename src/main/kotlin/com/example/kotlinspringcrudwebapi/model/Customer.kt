@@ -1,4 +1,4 @@
-package com.example.kotlinspringcrudwebapi
+package com.example.kotlinspringcrudwebapi.model
 
 /**
  * Web API で利用するデータモデル

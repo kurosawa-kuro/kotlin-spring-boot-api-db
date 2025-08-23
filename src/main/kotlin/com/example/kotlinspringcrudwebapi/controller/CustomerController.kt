@@ -1,6 +1,8 @@
-package com.example.kotlinspringcrudwebapi
+package com.example.kotlinspringcrudwebapi.controller
 
-import com.fasterxml.jackson.annotation.JsonProperty
+import com.example.kotlinspringcrudwebapi.dto.CustomerRequest
+import com.example.kotlinspringcrudwebapi.dto.CustomerResponse
+import com.example.kotlinspringcrudwebapi.service.CustomerService
 import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
@@ -75,25 +77,5 @@ class CustomerController(val customerService: CustomerService) {
         """.trimIndent()
     }
 }
-
-/**
- * Customer 作成エンドポイント、Customer 更新エンドポイントのリクエストボディ
- *
- * @property firstName
- * @property lastName
- */
-data class CustomerRequest(
-    @JsonProperty("first_name") val firstName: String,
-    @JsonProperty("last_name") val lastName: String,
-)
-
-/**
- * Customer 一覧取得エンドポイントのレスポンス
- *
- * @property customers
- */
-data class CustomerResponse(
-    val customers: List<Customer>,
-)
 
 

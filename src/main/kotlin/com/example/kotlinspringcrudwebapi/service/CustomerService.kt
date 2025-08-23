@@ -1,5 +1,7 @@
-package com.example.kotlinspringcrudwebapi
+package com.example.kotlinspringcrudwebapi.service
 
+import com.example.kotlinspringcrudwebapi.model.Customer
+import com.example.kotlinspringcrudwebapi.repository.CustomerRepository
 import org.springframework.stereotype.Service
 
 /**
