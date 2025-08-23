@@ -1,0 +1,11 @@
+### Create a new customer
+POST http://localhost:8080/customers
+Content-Type: application/json
+
+{
+    "first_name": "Carol",
+    "last_name": "Sample3"
+}
+
+### Get all customers
+GET http://localhost:8080/customers
